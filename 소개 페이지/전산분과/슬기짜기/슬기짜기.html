@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Navigation Bar</title>
+
+    <style>
+    /*임시*/
+       @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+        /*헤더 태그 스타일*/
+        header {
+            background-color: #0e2675;
+            color: white;
+            padding: 16px;
+            font-size: 40px;
+        }
+        header a {
+          color: white;
+          text-decoration: none;
+          cursor: pointer;
+          display: inline-block;
+        }
+        /*네비게이션 태그 스타일*/
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #0e2675;
+        text-align: center;
+      }
+      nav li {
+        display: inline-block;
+      }
+      nav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px 32px;
+        text-decoration: none;
+      }
+      nav li a:hover {
+        background-color: #2a49af;
+      }
+      #mnt {
+        background-color: black;
+        color: rgb(255, 230, 0);
+      }
+      #mnt:hover {
+        color:white;
+        background-color: #4168e5;
+      }
+
+     .luckiest-guy-regular {
+       font-family: "Luckiest Guy", cursive;
+       font-weight: 400;
+       font-style: normal;
+      }
+      /*임시*/
+
+      /*찐*/
+
+      /*화면 크기 제한*/
+      body {
+        margin: 0;
+        min-width: 800px;
+      }
+
+      /*폰트 스타일*/
+      .이름 {
+        text-align: center;
+        padding:none;
+      }
+      .인사 {
+        font-weight: 300;
+        text-align: center;
+      }
+      .경로 {
+        color: rgb(135, 135, 135);
+      }
+
+      .club-name {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        gap: 8px;
+      }
+
+      .club-img {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .contact-link {
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      
+      .contact-link:hover {
+        color: #4168e5;
+      }
+
+      .contact-icon {
+        width: 30px;
+        height: 30px;
+      }
+
+      .link-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 30px;
+      }
+
+      .navy {
+        background-color: #0e2675;
+        padding: 40px 20px 80px;
+        margin-top: 40px;
+      }
+
+      .소개내용 {
+        color: white;
+        text-align: center;
+        padding-top: 10px;
+      }
+
+      .신청하기 {
+        color: #fff200;
+        text-align: center;
+        padding-top: 20px;
+      }
+
+      button {
+        font-size: 1em;
+        box-shadow: 2px 2px 2px #000;
+        background-color: #4168e5;
+        color: white;
+        padding: 15px;
+        margin: 15px;
+        border: 1px;
+      }
+
+      button:hover{
+        background-color:#7a99ff;
+        color:#fff200
+      }
+
+      .photo-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        max-width: 1000px;
+        margin: 60px auto 0;
+      }
+
+      .photo-grid img {
+        width: 100%;
+        aspect-ratio: 4/3;
+        object-fit: cover;
+        display: block;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <!-- 임시-->
+    <!-- 헤더 태그 바디-->
+    <header class="luckiest-guy-regular">
+       <a href="A main page.html"> Handong's Club ! </a>
+    </header>
+
+    <!-- 네비게이션 태그 바디 -->
+    <nav>
+     <ul>
+        <li><a href="performance.html">Performance</a></li>
+
+        <li><a href="exhibition.html">Exhibition</a></li>
+
+        <li><a href="sports.html">Sports</a></li>
+ 
+        <li><a href="volunteer.html">Volunteer</a></li>
+
+        <li><a href="religion.html">Religion</a></li>
+
+        <li><a href="scholarship.html">Scholarship</a></li>
+
+        <li><a href="computer science.html">Computer Science</a></li>
+
+        <li><a href="mnt club.html" id="mnt">MNT</a></li>
+     </ul>
+    </nav>
+    <!-- 임시-->
+
+    <!-- 찐-->
+
+    <!--메인 태그 바디-->
+    <section class="introduce-box">
+      <h5 class="경로"> >>전산>슬기짜기</h5>
+      <h3 class="인사">안녕하세요,컴퓨터공학 동아리 </h3>
+
+      <img src="슬기짜기.png" width="200" height="200" class="club-img">
+
+      <div class="club-name">
+       <h1 class="이름">슬기짜기</h1>
+       <h3 class="인사">입니다!</h3>
+      </div>
+    </section>
+    <!--  <div class="link-box">
+    <a href="https://www.instagram.com/fc_chayo_2/" class="contact-link">
+     <img src="../../instagram_아이콘.jpg" alt="인스타그램" class="contact-icon">
+      <span>슬기짜기 instagram</span>
+    </a>
+
+    <a href="https://www.youtube.com/@official_hgu" class="contact-link">
+        <img src="../유튜브 아이콘.png" alt="연락처" class="contact-icon">
+        <span>슬기짜기 유튜브</span>
+      </a>
+
+    </div>-->
+    
+
+    <div class="navy">
+        <div class="소개내용">
+            <p>슬기짜기는 개발·디자인·기획을 함께 배우며 프로젝트와 스터디를 통해 성장하는 동시에, </p>
+            <p>다양한 교류와 활동으로 친목을 다지는 동아리입니다.</p>
+            <p>전공 실력과 협업 경험을 함께 쌓고 싶은 분들을 환영하며, </p>
+            <p>서로 도움을 나누며 즐겁게 성장하는 공동체입니다.</p>
+            <P>함께 배우고 도전해요!</P>
+        </div>
+
+        <div class="신청하기">
+        <a href="../../신청.html">
+          <button type="button">Join Us!</button>
+        </a>
+        <span>리크루팅 기간: xxxx.xx.xx ~ xxxx.xx.xx </span>
+
+       <div class="photo-grid">
+        <img src="슬기짜기사진1.png" alt="사진1">
+        <img src="슬기짜기사진2.png" alt="사진2">
+        <img src="슬기짜기사진3.png" alt="사진3">
+       </div>
+   </div>
+  </body>
+</html>
