@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한동대학교 동아리</title>
+
+<style>
+      *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial, sans-serif;
+      }
+
+      body{
+        background:#f5f7fa;
+      }
+
+      .container{
+        width:90%;
+        max-width:1200px;
+        margin:auto;
+        padding:30px;
+      }
+
+/* 헤더 */
+      header{
+        background:#0B1F4D;
+        color:white;
+        padding:25px;
+        border-radius:15px;
+        text-align:center;
+        margin-bottom:30px;
+      }
+
+      .header-content{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:20px;
+      }
+
+      header h1{
+        font-size:40px;
+        color:white;
+      }
+
+      .logo{
+        width:60px;
+        height:60px;
+        object-fit:contain;
+        background:white;
+        border-radius:50%;
+        padding:3px;
+        transition:0.3s;
+    }
+
+      .logo:hover{
+        transform:scale(1.08);
+      }
+
+/* 검색창 */
+      .search-container{
+        display:flex;
+        justify-content:center;
+        margin-bottom:20px;
+      }
+
+      .search-box{
+        width:500px;
+        padding:12px;
+        border:3px solid #0B1F4D;
+        border-radius:25px;
+      }
+
+      .search-box:focus{
+        outline:none;
+        box-shadow:0 0 10px rgba(11,31,77,0.3);
+      }
+
+/* 카테고리 */
+      .categories{
+        display:flex;
+        justify-content:center;
+        gap:25px;
+        margin-bottom:30px;
+      }
+
+      .category{
+        font-size:30px;
+        cursor:pointer;
+        transition:0.3s;
+      }
+
+      .category:hover{
+        transform:scale(1.2);
+        color:#0B1F4D;
+      }
+
+      /*찐*/
+
+      body {
+        margin: 0;
+        min-width: 800px;
+      }
+
+      .이름 {
+        text-align: center;
+        padding:none;
+      }
+      .인사 {
+        font-weight: 300;
+        text-align: center;
+      }
+      .경로 {
+        color: rgb(135, 135, 135);
+      }
+
+      .club-name {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        gap: 8px;
+      }
+
+      .club-img {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .contact-link {
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      
+      .contact-link:hover {
+        color: #4168e5;
+      }
+
+      .contact-icon {
+        width: 30px;
+        height: 30px;
+      }
+
+      .link-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 30px;
+      }
+
+      .navy {
+        background-color: #0e2675;
+        padding: 40px 20px 80px;
+        margin-top: 40px;
+      }
+
+      .소개내용 {
+        color: white;
+        text-align: center;
+        padding-top: 10px;
+      }
+
+      .신청하기 {
+        color: #fff200;
+        text-align: center;
+        padding-top: 20px;
+      }
+
+      button {
+        font-size: 1em;
+        box-shadow: 2px 2px 2px #000;
+        background-color: #4168e5;
+        color: white;
+        padding: 15px;
+        margin: 15px;
+        border: 1px;
+      }
+
+      button:hover{
+        background-color:#7a99ff;
+        color:#fff200
+      }
+
+      .photo-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        max-width: 1000px;
+        margin: 60px auto 0;
+      }
+
+      .photo-grid img {
+        width: 100%;
+        aspect-ratio: 4/3;
+        object-fit: cover;
+        display: block;
+      }
+
+      .category a {
+        text-decoration: none;
+      }
+
+    </style>
+  </head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <div class="header-content">
+            <a href="index.html">
+                <img src="https://i.namu.wiki/i/CYsXdQdGlOACqAG_NoN45qvEC71vaRicVOSsLXnDVYyGLa_tQnjI7UdcY1XAXYbmoXLxmD8kaMCBTCOhHgnfMg.svg"
+                alt="Handong Logo"
+                class="logo">
+            </a>
+
+            <a href="../../../메인페이지.html"><h1>한동대학교 동아리 소개</h1></a>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <input type="text" class="search-box" placeholder="Search Club...">
+    </div>
+
+    <div class="categories">
+        <div class="category">
+            <a href="../../../공연모음.html">🎵</a></div>
+        <div class="category">
+            <a href="../../../스포츠모음.html">🏃</a></div>
+        <div class="category">
+            <a href="../../../전시모음.html">🎨</a></div>
+        <div class="category">
+            <a href="../../../봉사모음.html">❤️</a></div>
+        <div class="category">
+            <a href="../../../종교모음.html">✝️</a></div>
+        <div class="category">
+            <a href="../../../학술모음.html">📄</a></div>
+        <div class="category">
+            <a href="../../../전산모음.html">💻</a></div>
+        <div class="category">
+            <a href="../../../MNT모음.html">🌍</a></div>
+        </div>
+    </div>
+
+    <!-- 찐-->
+
+    <!-- 여기에요오오오오!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+    <section class="introduce-box">
+      <!-- performance > (동아리 이름)-->
+      <h5 class="경로"> >>mnt >한풍</h5>
+      <!-- 안녕하세요, (여기 부분!)-->
+      <h3 class="인사">안녕하세요, 사물놀이를 통해 하나님을 찬양하는 하나님의 군악대</h3>
+
+      <!-- src=(파일명 쓰기)-->
+      <img src="한풍.png" width="200" height="200" class="club-img">
+
+      <!-- (h1에 동아리명)-->
+      <div class="club-name">
+       <h1 class="이름">한풍</h1>
+       <h3 class="인사">입니다!</h3>
+      </div>
+    </section>
+
+    <div class="link-box">
+      <!-- (동아리 인스타 링크 복붙)-->
+    <a href="https://www.instagram.com/hanpoong.official/" class="contact-link">
+      <img src="../../instagram_아이콘.jpg" alt="인스타그램" class="contact-icon">
+      <!-- (동아리명) instagram-->
+      <span>한풍 instagram</span>
+    </a>
+
+      <!-- (동아리 인스타 링크 복붙)-->
+    <a href="https://www.youtube.com/@%ED%95%9C%ED%92%8D-p6e" class="contact-link">
+      <img src="../../유튜브 아이콘.png" alt="연락처" class="contact-icon">
+      <!-- (동아리명) youtube-->
+      <span>한풍 youtube</span>
+    </a>
+    </div>
+
+    <div class="navy">
+      <!-- <p>와</p>사이에 동아리 소개글 한 문장씩 복붙!-->
+        <div class="소개내용">
+            <p>저희는 ‘비파와 수금으로 여호와를 찬양할지어다’라는 주제 말씀을 항상 생각하며</p>
+            <p>우리의 소리와 악기로 하나님을 찬양하는 동아리입니다.</p>
+            <p>또한 MNT 소속 단체로 매년 방학 기간 동안 국내 및 태국 사역을 이어가고 있습니다.</p>
+            <p>한국의 전통 악기로 하나님을 찬양하고 예배하고 싶은 분들이라면 누구나 언제든지 환영입니다.</p>
+          </div>
+
+        <div class="신청하기">
+        <a href="../../../동아리 신청서.html">
+          <button type="button">Join Us!</button>
+        </a>
+        <span>리크루팅 기간: xxxx.xx.xx ~ xxxx.xx.xx </span>
+
+       <div class="photo-grid">
+        <!--동아리 사진 인스타에서 캡쳐해와서 파일명 복붙!-->
+        <img src="한풍 사진1.png" alt="사진1">
+        <img src="한풍 사진2.png" alt="사진2">
+        <img src="한풍 사진3.png" alt="사진3">
+        <img src="한풍 사진4.png" alt="사진4">
+        <img src="한풍 사진5.png" alt="사진5">
+       </div>
+   </div>
+  </body>
+</html>
