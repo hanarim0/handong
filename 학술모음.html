@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한동대학교 동아리</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:30px;
+}
+
+/* 헤더 */
+header{
+    background:#0B1F4D;
+    color:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.header-content{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+}
+
+header h1{
+    font-size:40px;
+    color:white;
+}
+
+.logo{
+    width:60px;
+    height:60px;
+    object-fit:contain;
+    background:white;
+    border-radius:50%;
+    padding:3px;
+    transition:0.3s;
+}
+
+.logo:hover{
+    transform:scale(1.08);
+}
+
+/* 검색창 */
+.search-container{
+    display:flex;
+    justify-content:center;
+    margin-bottom:20px;
+}
+
+.search-box{
+    width:500px;
+    padding:12px;
+    border:3px solid #0B1F4D;
+    border-radius:25px;
+}
+
+.search-box:focus{
+    outline:none;
+    box-shadow:0 0 10px rgba(11,31,77,0.3);
+}
+
+/* 카테고리 */
+.categories{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-bottom:30px;
+}
+
+.category{
+    font-size:30px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.category:hover{
+    transform:scale(1.2);
+    color:#0B1F4D;
+}
+
+/* 달력 */
+.calendar{
+    width:100%;
+    height:auto;
+    background:white;
+    border:2px solid #d0d8e8;
+    border-radius:15px;
+    padding:20px;
+    margin-bottom:40px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.calendar h2{
+    color:#0B1F4D;
+    margin-bottom:10px;
+}
+
+.calendar table{
+    width:100%;
+    border-collapse:collapse;
+    text-align:center;
+    margin-top:15px;
+}
+
+.calendar caption{
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:10px;
+    color:#0B1F4D;
+}
+
+.calendar th{
+    background:#0B1F4D;
+    color:white;
+    padding:12px;
+}
+
+.calendar td{
+    height:80px;
+    padding:10px;
+    background:#f8faff;
+    transition:0.3s;
+}
+
+.calendar td:hover{
+    background:#dbe4ff;
+}
+
+/* 동아리 카드 */
+.club-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.club-card{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 0 8px rgba(0,0,0,0.1);
+    transition:0.3s;
+    border-top:5px solid #0B1F4D;
+}
+
+.club-card:hover{
+    transform:translateY(-8px);
+    background:#0B1F4D;
+}
+
+.club-logo{
+    width:100px;
+    height:100px;
+    margin:auto;
+    background:#dbe4ff;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+
+.club-card a{
+    text-decoration:none;
+    color:black;
+}
+
+.club-card h3{
+    margin-top:10px;
+}
+
+.club-card:hover h3,
+.club-card:hover a{
+    color:white;
+}
+
+.category a {
+  text-decoration: none;
+}
+
+/* 반응형 */
+@media(max-width:768px){
+    .header-content{
+        flex-direction:column;
+    }
+
+    header h1{
+        font-size:30px;
+    }
+
+    .search-box{
+        width:100%;
+    }
+
+    .categories{
+        flex-wrap:wrap;
+    }
+
+    .category{
+        font-size:25px;
+    }
+
+    .calendar td{
+        height:60px;
+        font-size:12px;
+        padding:5px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <div class="header-content">
+            <a href="index.html">
+                <img src="https://i.namu.wiki/i/CYsXdQdGlOACqAG_NoN45qvEC71vaRicVOSsLXnDVYyGLa_tQnjI7UdcY1XAXYbmoXLxmD8kaMCBTCOhHgnfMg.svg"
+                alt="Handong Logo"
+                class="logo">
+            </a>
+
+            <a href="메인페이지.html"><h1>한동대학교 동아리 소개</h1></a>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <input type="text" class="search-box" placeholder="Search Club...">
+    </div>
+
+    <div class="categories">
+        <div class="category">
+            <a href="공연모음.html">🎵</a></div>
+        <div class="category">
+            <a href="스포츠모음.html">🏃</a></div>
+        <div class="category">
+            <a href="전시모음.html">🎨</a></div>
+        <div class="category">
+            <a href="봉사모음.html">❤️</a></div>
+        <div class="category">
+            <a href="종교모음.html">✝️</a></div>
+        <div class="category">
+            <a href="학술모음.html">📄</a></div>
+        <div class="category">
+            <a href="전산모음.html">💻</a></div>
+        <div class="category">
+            <a href="MNT모음.html">🌍</a></div>
+        </div>
+    </div>
+
+    <section class="club-grid">
+
+        <div class="club-card">
+            <a href="./소개 페이지/학술/두두스/두두스.html">
+                <img src="./소개 페이지/학술/두두스/두두스.png" alt="로고" class="club-logo">
+                <h3>두두스</h3>
+            </a>
+        </div>
+
+        <div class="club-card">
+            <a href="./소개 페이지/학술/사자/사자.html">
+                <img src="./소개 페이지/학술/사자/사자.png" alt="로고" class="club-logo">
+                <h3>멋쟁이 사자처럼</h3>
+            </a>
+        </div>
+
+        <div class="club-card">
+            <a href="./소개 페이지/학술/펜통/펜통.html">
+                <img src="./소개 페이지/학술/펜통/펜통.png" alt="로고" class="club-logo">
+                <h3>펜통</h3>
+            </a>
+        </div>
+
+    </section>

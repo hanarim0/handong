@@ -1,73 +1,110 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Navigation Bar</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한동대학교 동아리</title>
 
-    <style>
-    /*임시*/
-       @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+<style>
+      *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial, sans-serif;
+      }
 
-        /*헤더 태그 스타일*/
-        header {
-            background-color: #0e2675;
-            color: white;
-            padding: 16px;
-            font-size: 40px;
-        }
-        header a {
-          color: white;
-          text-decoration: none;
-          cursor: pointer;
-          display: inline-block;
-        }
-        /*네비게이션 태그 스타일*/
-      nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #0e2675;
-        text-align: center;
+      body{
+        background:#f5f7fa;
       }
-      nav li {
-        display: inline-block;
+
+      .container{
+        width:90%;
+        max-width:1200px;
+        margin:auto;
+        padding:30px;
       }
-      nav li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 16px 32px;
-        text-decoration: none;
-      }
-      nav li a:hover {
-        background-color: #2a49af;
-      }
-      #mnt {
-        background-color: black;
-        color: rgb(255, 230, 0);
-      }
-      #mnt:hover {
+
+/* 헤더 */
+      header{
+        background:#0B1F4D;
         color:white;
-        background-color: #4168e5;
+        padding:25px;
+        border-radius:15px;
+        text-align:center;
+        margin-bottom:30px;
       }
 
-     .luckiest-guy-regular {
-       font-family: "Luckiest Guy", cursive;
-       font-weight: 400;
-       font-style: normal;
+      .header-content{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:20px;
       }
-      /*임시*/
+
+      header h1{
+        font-size:40px;
+        color:white;
+      }
+
+      .logo{
+        width:60px;
+        height:60px;
+        object-fit:contain;
+        background:white;
+        border-radius:50%;
+        padding:3px;
+        transition:0.3s;
+    }
+
+      .logo:hover{
+        transform:scale(1.08);
+      }
+
+/* 검색창 */
+      .search-container{
+        display:flex;
+        justify-content:center;
+        margin-bottom:20px;
+      }
+
+      .search-box{
+        width:500px;
+        padding:12px;
+        border:3px solid #0B1F4D;
+        border-radius:25px;
+      }
+
+      .search-box:focus{
+        outline:none;
+        box-shadow:0 0 10px rgba(11,31,77,0.3);
+      }
+
+/* 카테고리 */
+      .categories{
+        display:flex;
+        justify-content:center;
+        gap:25px;
+        margin-bottom:30px;
+      }
+
+      .category{
+        font-size:30px;
+        cursor:pointer;
+        transition:0.3s;
+      }
+
+      .category:hover{
+        transform:scale(1.2);
+        color:#0B1F4D;
+      }
 
       /*찐*/
 
-      /*화면 크기 제한*/
       body {
         margin: 0;
         min-width: 800px;
       }
 
-      /*폰트 스타일*/
       .이름 {
         text-align: center;
         padding:none;
@@ -165,44 +202,58 @@
         display: block;
       }
 
+      .category a {
+        text-decoration: none;
+      }
+
     </style>
   </head>
 
-  <body>
+<body>
 
-    <!-- 임시-->
-    <!-- 헤더 태그 바디-->
-    <header class="luckiest-guy-regular">
-       <a href="A main page.html"> Handong's Club ! </a>
+<div class="container">
+
+    <header>
+        <div class="header-content">
+            <a href="index.html">
+                <img src="https://i.namu.wiki/i/CYsXdQdGlOACqAG_NoN45qvEC71vaRicVOSsLXnDVYyGLa_tQnjI7UdcY1XAXYbmoXLxmD8kaMCBTCOhHgnfMg.svg"
+                alt="Handong Logo"
+                class="logo">
+            </a>
+
+            <a href="../../../메인페이지.html"><h1>한동대학교 동아리 소개</h1></a>
+        </div>
     </header>
 
-    <!-- 네비게이션 태그 바디 -->
-    <nav>
-     <ul>
-        <li><a href="performance.html">Performance</a></li>
+    <div class="search-container">
+        <input type="text" class="search-box" placeholder="Search Club...">
+    </div>
 
-        <li><a href="exhibition.html">Exhibition</a></li>
-
-        <li><a href="sports.html">Sports</a></li>
- 
-        <li><a href="volunteer.html">Volunteer</a></li>
-
-        <li><a href="religion.html">Religion</a></li>
-
-        <li><a href="scholarship.html">Scholarship</a></li>
-
-        <li><a href="computer science.html">Computer Science</a></li>
-
-        <li><a href="mnt club.html" id="mnt">MNT</a></li>
-     </ul>
-    </nav>
-    <!-- 임시-->
+    <div class="categories">
+        <div class="category">
+            <a href="../../../공연모음.html">🎵</a></div>
+        <div class="category">
+            <a href="../../../스포츠모음.html">🏃</a></div>
+        <div class="category">
+            <a href="../../../전시모음.html">🎨</a></div>
+        <div class="category">
+            <a href="../../../봉사모음.html">❤️</a></div>
+        <div class="category">
+            <a href="../../../종교모음.html">✝️</a></div>
+        <div class="category">
+            <a href="../../../학술모음.html">📄</a></div>
+        <div class="category">
+            <a href="../../../전산모음.html">💻</a></div>
+        <div class="category">
+            <a href="../../../MNT모음.html">🌍</a></div>
+        </div>
+    </div>
 
     <!-- 찐-->
 
     <!--메인 태그 바디-->
     <section class="introduce-box">
-      <h5 class="경로"> >>Performance >SWEEP</h5>
+      <h5 class="경로"> >>🏃 >SWEEP</h5>
       <h3 class="인사">안녕하세요, 한동 유일 주짓수 동아리</h3>
 
       <img src="SWEEP.png" width="200" height="200" class="club-img">
