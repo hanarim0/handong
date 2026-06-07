@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한동대학교 동아리</title>
+
+<style>
+      *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial, sans-serif;
+      }
+
+      body{
+        background:#f5f7fa;
+      }
+
+      .container{
+        width:90%;
+        max-width:1200px;
+        margin:auto;
+        padding:30px;
+      }
+
+/* 헤더 */
+      header{
+        background:#0B1F4D;
+        color:white;
+        padding:25px;
+        border-radius:15px;
+        text-align:center;
+        margin-bottom:30px;
+      }
+
+      .header-content{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:20px;
+      }
+
+      header h1{
+        font-size:40px;
+        color:white;
+      }
+
+      .logo{
+        width:60px;
+        height:60px;
+        object-fit:contain;
+        background:white;
+        border-radius:50%;
+        padding:3px;
+        transition:0.3s;
+    }
+
+      .logo:hover{
+        transform:scale(1.08);
+      }
+
+/* 검색창 */
+      .search-container{
+        display:flex;
+        justify-content:center;
+        margin-bottom:20px;
+      }
+
+      .search-box{
+        width:500px;
+        padding:12px;
+        border:3px solid #0B1F4D;
+        border-radius:25px;
+      }
+
+      .search-box:focus{
+        outline:none;
+        box-shadow:0 0 10px rgba(11,31,77,0.3);
+      }
+
+/* 카테고리 */
+      .categories{
+        display:flex;
+        justify-content:center;
+        gap:25px;
+        margin-bottom:30px;
+      }
+
+      .category{
+        font-size:30px;
+        cursor:pointer;
+        transition:0.3s;
+      }
+
+      .category:hover{
+        transform:scale(1.2);
+        color:#0B1F4D;
+      }
+
+      /*찐*/
+
+      body {
+        margin: 0;
+        min-width: 800px;
+      }
+
+      .이름 {
+        text-align: center;
+        padding:none;
+      }
+      .인사 {
+        font-weight: 300;
+        text-align: center;
+      }
+      .경로 {
+        color: rgb(135, 135, 135);
+      }
+
+      .club-name {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        gap: 8px;
+      }
+
+      .club-img {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .contact-link {
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      
+      .contact-link:hover {
+        color: #4168e5;
+      }
+
+      .contact-icon {
+        width: 30px;
+        height: 30px;
+      }
+
+      .link-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 30px;
+      }
+
+      .navy {
+        background-color: #0e2675;
+        padding: 40px 20px 80px;
+        margin-top: 40px;
+      }
+
+      .소개내용 {
+        color: white;
+        text-align: center;
+        padding-top: 10px;
+      }
+
+      .신청하기 {
+        color: #fff200;
+        text-align: center;
+        padding-top: 20px;
+      }
+
+      button {
+        font-size: 1em;
+        box-shadow: 2px 2px 2px #000;
+        background-color: #4168e5;
+        color: white;
+        padding: 15px;
+        margin: 15px;
+        border: 1px;
+      }
+
+      button:hover{
+        background-color:#7a99ff;
+        color:#fff200
+      }
+
+      .photo-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        max-width: 1000px;
+        margin: 60px auto 0;
+      }
+
+      .photo-grid img {
+        width: 100%;
+        aspect-ratio: 4/3;
+        object-fit: cover;
+        display: block;
+      }
+
+      .category a {
+        text-decoration: none;
+      }
+
+    </style>
+  </head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <div class="header-content">
+            <a href="index.html">
+                <img src="https://i.namu.wiki/i/CYsXdQdGlOACqAG_NoN45qvEC71vaRicVOSsLXnDVYyGLa_tQnjI7UdcY1XAXYbmoXLxmD8kaMCBTCOhHgnfMg.svg"
+                alt="Handong Logo"
+                class="logo">
+            </a>
+
+            <a href="../../../메인페이지.html"><h1>한동대학교 동아리 소개</h1></a>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <input type="text" class="search-box" placeholder="Search Club...">
+    </div>
+
+    <div class="categories">
+        <div class="category">
+            <a href="../../../공연모음.html">🎵</a></div>
+        <div class="category">
+            <a href="../../../스포츠모음.html">🏃</a></div>
+        <div class="category">
+            <a href="../../../전시모음.html">🎨</a></div>
+        <div class="category">
+            <a href="../../../봉사모음.html">❤️</a></div>
+        <div class="category">
+            <a href="../../../종교모음.html">✝️</a></div>
+        <div class="category">
+            <a href="../../../학술모음.html">📄</a></div>
+        <div class="category">
+            <a href="../../../전산모음.html">💻</a></div>
+        <div class="category">
+            <a href="../../../MNT모음.html">🌍</a></div>
+        </div>
+    </div>
+    <!-- 찐-->
+
+    <!--메인 태그 바디-->
+    <section class="introduce-box">
+      <h5 class="경로"> >>봉사>B2B</h5>
+      <h3 class="인사">안녕하세요,아동을 대상으로 굿네이버스와 함께 하는 봉사동아리, </h3>
+
+      <img src="피스.png" width="200" height="200" class="club-img">
+
+      <div class="club-name">
+       <h1 class="이름"> 피스메이커</h1>
+       <h3 class="인사">입니다!</h3>
+      </div>
+    </section>
+
+    
+
+
+    <div class="navy">
+        <div class="소개내용">
+            <p>아이들이 사랑과 평화를 전하는 공동체의 일원으로 살아갈 수 있도록 돕고 있습니다.</p>
+            <p>또한 포항 지역아동센터에서 교육봉사와 다양한 놀이 활동을 통해</p>
+            <p>아이들이 정서적 안정감을 회복하도록 함께합니다.</p>
+            <p>아이들의 곁에서 웃으며 선한 영향력을 나눌 학우를 기다립니다.</p>
+        </div>
+
+        <div class="신청하기">
+        <a href="../../../동아리 신청서.html">
+          <button type="button">Join Us!</button>
+        </a>
+        <span>리크루팅 기간: xxxx.xx.xx ~ xxxx.xx.xx </span>
+
+
+  </body>
+</html>
