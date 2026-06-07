@@ -321,38 +321,44 @@ header h1{
 
     <section class="club-grid">
 
-        <div class="club-card">
-            <a href="club1.html">
-                <div class="club-logo"></div>
-                <h3>God's Fellow</h3>
-            </a>
-        </div>
+            <div class="club-card">
+                <a href="club1.html">
+                    <div class="club-logo"><img src="갓스팰로우.jpg" alt="갓스팰로우" width="100" height="100">
+                        <h3>God's Fellow</h3>
+                </a>
+            </div>
 
-        <div class="club-card">
-            <a href="club2.html">
-                <div class="club-logo"></div>
-                <h3>하늘을 향한 춤</h3>
             </a>
-        </div>
+    </div>
 
-        <div class="club-card">
-            <a href="club3.html">
-                <div class="club-logo"></div>
-                <h3>소울</h3>
-            </a>
-        </div>
+    <div class="club-card">
+        <a href="club2.html">
+            <div class="club-logo"> <img src="하향.jpg" alt="하향"
+                    style="width:100%; height:100%; object-fit:cover; border-radius:10px;"></div>
 
-        <div class="club-card">
-            <a href="club4.html">
-                <div class="club-logo"></div>
-                <h3>한풍</h3>
-            </a>
-        </div>
+            <h3>하늘을 향한 춤</h3>
+        </a>
+    </div>
+
+    <div class="club-card">
+        <a href="club3.html">
+            <div class="club-logo"> <img src="소울.jpg" alt="소울"
+                    style="width:100%; height:100%; object-fit:cover; border-radius:10px;"></div>
+            <h3>소울</h3>
+        </a>
+    </div>
+
+    <div class="club-card">
+        <a href="club4.html"></a>
+        <div class="club-logo"> <img src="한풍.jpg" alt="한풍"
+                style="width:100%; height:100%; object-fit:cover; border-radius:10px;"></div>
+        <h3>한풍</h3>
+        </a>
+    </div>
 
     </section>
 
-</div>
-
+    </div>
 </body>
 </html><!DOCTYPE html>
 <html lang="en">
